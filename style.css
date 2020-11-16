@@ -1,0 +1,149 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  z-index: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.rect {
+  position: absolute;
+  z-index: 3;
+  margin: -10vh 0 0 10%;
+  text-align: center;
+  color: #fc6d26;
+  width:500px;
+  height:500px;
+  border: solid #fff 1px;
+  transform: rotate(-10deg);
+  animation: moving 47s infinite linear;
+}
+
+.rect1 {
+  position: absolute;
+  z-index: 3;
+  margin: -10vh 0 0 30%;
+  text-align: center;
+  color: #fc6d26;
+  width:500px;
+  height:500px;
+  border: solid #fff 1px;
+  transform: rotate(-10deg);
+  animation: moving 47s infinite linear;
+}
+
+.rect2 {
+  position: absolute;
+  z-index: 3;
+  margin: -10vh 0 0 50%;
+  text-align: center;
+  color: #fc6d26;
+  width:500px;
+  height:500px;
+  border: solid #fff 1px;
+  transform: rotate(-10deg);
+  animation: moving 47s infinite linear;
+}
+
+#present, #past, #future {
+  background-color: #554478;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 25vh;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+}
+
+
+p {
+  margin: 0px;
+  position: relative;
+  z-index: 21;
+}
+
+.wrapped_past {
+  background-color: blue;
+  right: 0;
+  left: 0;
+  margin: 0 10%;
+  padding: 0px 0px;
+  position: relative;
+  z-index: 220;
+}
+
+.link_frame {
+  margin: 0px;
+  width:80%;
+  position: relative;
+  z-index: 200;
+}
+
+a {
+  color: #e24329;
+  font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  position: relative;
+  z-index: 200;
+}
+
+.accordion {
+  background-color: #fc6d26;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 4.7s;
+  margin: 0px 0px;
+  position: relative;
+  z-index: 200;
+}
+
+.panel {
+  margin: 0 10%;
+  background-color: #fca326;
+  max-height: 0;
+  text-align: center;
+  overflow: hidden;
+  transition: max-height 0.63s ease-out;
+  position: relative;
+  z-index: 20;
+}
+
+@keyframes moving {
+    100% {transform: rotate(-360deg);}
+}
+
+
+
+.active, .accordion:hover {
+  background-color: #e24329;
+  position: relative;
+  z-index: 5;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  position: relative;
+  z-index: 40;
+}
+
+.active:after {
+  content: "\2212";
+  position: relative;
+  z-index: 30;
+}
