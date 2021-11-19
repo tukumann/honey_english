@@ -50,6 +50,7 @@ html {
 
 p {
   margin: 0px;
+  padding: 16px;
   position: relative;
   z-index: 21;
 }
